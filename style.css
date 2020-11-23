@@ -1,0 +1,857 @@
+body{
+    margin: 0;
+    
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;   
+    color: #000000;
+/*    -webkit-font-smoothing: antialiased;*/
+    
+    background-color: #ffffff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Container*/
+.container {
+    width: 100%;
+    max-width: 1024px;
+    
+    background-color: #fff;
+    
+    margin: 0 auto; 
+}
+.container p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header*/
+.header{    
+}
+
+/* Navigation*/
+.header_nav_block{
+    position: fixed;
+    top:0;
+    
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    
+    height: 50px;
+    width: 100%;
+    
+    background-color: #404040;
+    z-index: 200;
+    
+}
+
+.nav_links {        
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link{  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    
+/*    width: 200px;*/
+    margin: auto;
+    height: 50px;
+ 
+}
+
+.nav_link a{
+    font-family: 'Ralзeway', sans-serif;
+    font-weight: 400;
+    color: #f00;
+    text-decoration: none;
+    font-size: 22px;  
+    text-align: center;
+    line-height: 1.0;
+    
+}
+
+.nav_link:first-child{
+/*    margin-left: 0;*/
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+
+/*Intro* 
+============*/
+.into_inner{
+/*    Нужно для расположения элементов в строку*/
+    display: flex;
+/*    Нужно для разделения элементов между собой*/
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 50px 25px 0;
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;    
+    color: #f00;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+.intro_logo{
+    display: flex;
+    align-items: center;
+    
+}
+.intro_logo img{
+    height: 100px;
+}
+
+.intro_logo_text {
+    font-size: 35px;
+    padding: 0px;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+.intro_logo_text_mini{
+    font-size: 16px;
+    padding: 0px;
+/*    margin-bottom:5px;*/
+}
+
+.intro_header_phone{
+    text-align: end;
+}
+.intro_phone_link{
+    text-decoration: none;
+    color: #f00;
+}
+
+/*About us 
+================*/
+.about_us{
+/*    background-color: #0f0;*/
+    background: #404996 url("img/raki_about.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    
+}
+
+.about_us p, h1{
+    padding: 5px;
+    margin: 0;
+}
+
+.about{
+    height: auto;
+    min-height: 300px;
+    width: 650px;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+}
+.news{
+/*    height: 500px;*/
+    width: 300px;
+    justify-content: center;
+}
+.news_block{
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.news_item{
+    border: 3px #f00 solid;
+    background-color: aliceblue;
+}
+.news_block:last-child{
+    margin-bottom: 0;
+}
+
+/* Prodaction
+============================= */
+.products_block{
+    background: rgba(255,255,255,0.6) url("img/raki_product.jpg") center repeat;
+    background-blend-mode: color;
+}
+.block_title{
+    display: contents;
+    text-align: center;
+}
+.block_title h1{
+    
+    font-family: 'Raleway', sans-serif;
+    font-style:normal;    
+    color: #f00;
+    font-weight: 1000;
+    font-size: 35px;
+    padding: 35px 0 15px 0;
+}
+
+.block_subtitle{
+    text-align: center;
+    width: 500px;
+    background-color: rgba(255,255,255,.8);
+    margin: 0 auto;
+}
+
+.product_block{
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-wrap:wrap; 
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    
+}
+
+.elem_description{
+    padding: 5px;
+    margin: 0;
+    
+}
+
+.elem_block{
+    background-color: antiquewhite;
+    width: 32%;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.elem_block img{
+    object-fit: cover;
+/*    height: auto;*/
+    width: 100% ;
+    
+}
+
+.elem_block_hiden{
+    visibility: hidden;
+}
+
+/* ========================= Delivery ======================== */
+
+.delivery_block{
+/*    background: #404996 url("img/raki_about.jpg") center no-repeat;*/
+    height: auto;
+    background-color: rgba(202,202,200,1);
+    padding: 0px 25px 1px;
+}
+
+
+.delivery_content {
+    height: auto;
+    margin: 20px;
+}
+
+.delivery_text {
+    padding-bottom: 20px
+}
+
+.delivery_elements {    
+    padding-bottom: 20px;
+    width: 650px;
+}
+
+.delivery_stickers {
+    display: flex;    
+    justify-content: center;
+}
+.delivery_contacts_sticker{
+}
+
+.delivery_elem {
+    height: auyo;
+    background-color: #0ff;
+    margin: 10px 40px;
+    display: flex;
+    background-color: antiquewhite;
+    padding-right: 5px;
+    
+}
+.delivery_elem:last-child{    
+    margin: 10px 40px 0;
+    padding-right: 5px;
+}
+.delivery_elem img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+
+.delivery_elem_text{
+    margin: auto 0 auto 10px ;
+    appearance: none;
+    font-size: 20px;
+}
+
+
+/* ============== Contacts sticker ======== */
+.borders_sticker{
+    margin: auto;
+}
+
+.contacts_text_sticker {
+    background-color: rgba(10,10,10, 0.9);
+    height: 319px;
+    text-align: center;
+    width: ;
+    max-width: 400px;
+    margin: auto;
+    color: #fff;
+    padding: 20px;
+}
+.contacts_text_sticker p{
+    line-height: 1.5;
+}
+.contacts_text_sticker h1{
+    color: #f00;
+}
+
+
+/* ============== Photos_block ======== */
+.photos_block{
+    background-color: #6d4e4e;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.photo{
+    width: 33.3333333%;
+    height: 350px;
+    position:relative;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    
+}
+
+.photo_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    height: 100%;
+/*    width: 100%;*/
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.photo_cover{
+    position: absolute;
+    background-color: rgba(227, 51, 51, 0.7);
+
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    opacity: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.2s linear;
+    
+}
+
+.photo:hover .photo_cover{
+    background-color: rgba(227, 51, 51, 0);
+    opacity: 0;
+    
+    transition: opacity 0.2s linear;
+}
+
+.photo_cover_text {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase
+}
+
+/* ==================== Рецепты =========== */
+
+.recipes{
+    background-color: aqua;
+    height: auto;
+    background-color: rgba(202,202,200,1);
+}
+
+.recipes_block{
+    padding-bottom: 50px;
+}
+
+.recipe{
+    background-color: rgba(64, 64, 64, 0.8);
+    margin: 0 50px 0 50px;
+    color: #fff;
+}
+.recipe_title{
+    font-size: 28px;
+    margin: 10px;
+}
+
+.recipe_text {
+    font-size: 22px;
+    margin: 10px;
+    
+}
+
+.recipe_images {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.recipe_image{
+    width: 100%;
+    padding: 10px;
+/*    border: 1px solid #fff;*/
+}
+.recipe_image img{
+    width: 100%;
+}
+
+
+/* ==================== Контакты =========== */
+
+.contacts{
+    background: rgba(255,255,255,0.3) url("img/raki_product.jpg") top repeat;
+    background-blend-mode: color;    
+}
+
+.contacts_block {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    padding: 0px;
+}
+
+.tel_and_map {
+    display: flex; 
+    justify-content: center
+    
+}
+
+
+.contacts_sticker{
+    margin: 0 10px;
+}
+
+.text_us{
+    margin: 0px 50px; 
+}
+.form_text_border {
+    width: 400px;
+    background-color: rgba(0, 0, 0,0.6);
+    padding: 10px;
+}
+
+.form_text {
+    display: flex;    
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.form_text input{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.form_text textarea{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 55px;
+}
+
+.contact_btn{
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(255, 245, 0);
+    height: 40px;
+    width: 170px;
+}
+
+.map {    
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    padding: 20px 0 30px 0;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    color: red
+}
+
+/* ==================== Footer =========== */
+
+.footer {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    
+    height: 50px;
+    width: 100%;
+    
+    background-color: #404040;
+}
+
+.footer_text {
+    font-family: 'Ralзeway', sans-serif;
+    font-weight: 200;
+    color: #f00;
+    text-decoration: none;
+    font-size: 14px;  
+    text-align: center;
+    color: #fff;
+}
+
+/* ========= Burger =========*/
+.burger_block{
+    width: 100%;
+    display: none;    
+}
+.burger{
+    border: 0px;
+    background-color: transparent;
+    padding: 9px 2px;
+    cursor: pointer;
+}
+.burger_item{
+    display: block;
+    width: 30px;
+    height: 3px;
+    
+    background-color: #f00;
+    
+    font-size: 0;
+    color: transparent;
+    
+    position: relative;
+}
+.burger_item:before, 
+.burger_item:after{
+    content: "s";
+    width: 100%;
+    height: 3px;
+    background-color: #f00;
+    
+    position: absolute;
+    left:0;
+    z-index: 1;
+}
+.burger_item:before{
+    top: -8px;
+}
+.burger_item:after{
+    bottom: -8px;
+}
+
+
+/*=================================*/
+/* ============ Media ============*/
+
+
+@media(max-width:1024px){    
+    .photo_cover{
+        display: none;
+    }    
+}
+
+@media (max-width: 769px) {
+    
+/*   =============== Header========   */
+    /* Navigation*/
+    .burger_block{
+        display: block;    
+    }
+    .header_nav_block{
+        position: fixed;
+        top:0;
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+
+        height: 50px;
+        width: 100%;
+
+        background-color: #404040;
+        z-index: 200;
+
+    }
+    
+    .nav_links {        
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        background-color: #404040;
+    }
+    .nav_links.show{
+        display: flex;
+    }
+    .nav_link{      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        
+        width: 100%;
+        padding-right: 25px;
+        height: 40px;
+
+    }
+    .nav_link a{
+        text-align: right;
+    }
+    
+    
+    .burger{
+        display: block; 
+        margin: 14px 25px 14px auto;
+        
+    }
+    
+    .into_inner{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .intro_header_phone{
+        text-align: center
+    }
+    
+    /* ========== About us ================*/
+    .about_us{
+        flex-direction: column;
+    }
+    .about{
+        height: auto;
+        min-height: 300px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .news{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .news_block{
+        height: auto;
+        width: 45%;
+        margin: 0 10px;
+        
+    }
+    .news_item{
+        border: 3px #f00 solid;
+        margin-bottom: 10px;    
+    }
+    
+    
+/*    ========== Photo ========*/
+    .photo{
+            width: 50%;
+    }
+    
+/*    ============ Production =========== */
+    
+    .elem_block{
+        background-color: antiquewhite;
+        width: 48%;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    
+/*    =============== Delivery ===============*/
+    
+    .delivery_stickers {
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    
+    .delivery_elements {  
+        padding-top: 25px;
+        width: 100%;
+    }
+    
+/*    ========= Contacts ======== */
+    
+    .tel_and_map {
+        flex-wrap: wrap;
+        width: 100%;
+    
+    }
+    .text_us{
+        margin: 10px 50px 0; 
+    }    
+    .form_text_border {
+        width: 500px;
+    }
+    
+    .form_text textarea{
+        height: 100px;
+    }
+}
+
+@media (max-width: 501px){
+    .map {
+        display: none;
+    }
+    .text_us{
+        padding-bottom: 30px;
+    }
+    
+    
+    .block_subtitle{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .photo{
+        width: 100%;
+        height: 350px;
+    }
+    
+/*    ========= Рецепты ======== */
+    .recipe{
+        margin: 10px;
+    }
+    .recipes_block{
+        padding: 0;
+    }
+    
+/*    ==== Contacts ==== */
+    .form_text_border {
+        width: 400px;
+    }
+    
+    .form_text textarea{
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 441px) {
+
+    .intro_logo img{
+        height: 70px
+    }
+    
+    .intro_logo_text {
+        font-size: 26px;
+        padding: 0px;
+        line-height: 1.1;
+        margin-left: 10px;
+    }
+    .intro_logo_text_mini{
+        font-size: 14px;
+    }
+    .intro_header_phone a{
+        line-height: 1.5;
+        font-weight: 900;
+    }
+    
+    .news_block{
+        width: 100%;
+        
+    }
+    
+    
+/*    ====== Production ===== */
+    
+    .elem_block{
+    background-color: antiquewhite;
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+}  
+    
+
+/*    ===== Delivery ======  */
+    
+    .delivery_block{       
+        padding: 0px 10px 1px;
+    }
+    .delivery_elements {    
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    
+    .delivery_elem{
+        margin: 10px 5px;
+    }
+    .delivery_elem:last-child{
+        margin: 10px 5px;
+    }
+    
+/*    ========= Рецепты ======== */
+    .recipe{
+        margin: 0;
+    }
+    .recipes_block{
+        padding: 0;
+    }
+        
+/*    ==== Contacts    */
+    
+    .form_text_border {
+        width: 100%;
+    }
+    
+    .text_us{
+        margin: 10px 50px 0; 
+    }    
+    .form_text_border {
+        width: 300px;
+    }
+    
+    .form_text textarea{
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
